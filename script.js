@@ -8,7 +8,7 @@ async function chamarAPI() {
     return;
   }
 
-  saida.textContent = 'Chamando API...';
+  saida.textContent = 'Realizando requisição na API (' +  url + ')';
 
   try {
     const resp = await fetch(url, { method: 'GET' });
