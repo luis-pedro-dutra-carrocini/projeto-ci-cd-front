@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    name: Detectar versão e publicar na Vercel
+    name: Publicar na Vercel
     runs-on: ubuntu-latest
 
     steps:
@@ -17,13 +17,10 @@ jobs:
       - name: Mostrar versão
         run: echo "Publicando versão ${GITHUB_REF_NAME}"
 
-      - name: Instalar dependências
-        run: npm install
+      # Como é um site estático (HTML, CSS, JS), não há dependências nem build
+      - name: Listar arquivos do projeto (opcional, para debug)
+        run: ls -R
 
-      - name: Gerar build
-        run: npm run build
-
-      # Ação oficial não-oficial (de comunidade) para deploy na Vercel
       - name: Deploy para Vercel
         uses: amondnet/vercel-action@v25
         with:
