@@ -4,7 +4,7 @@ Front-end estático (HTML/CSS/JS) hospedado na **Vercel** que consome a API no *
 
 ## Como usar
 1. Deploy este repositório na Vercel (importar do GitHub).
-2. Abra a URL do front e, no campo de texto, informe a URL do back (ex.: `https://projeto-back.onrender.com`).
+2. Abra a URL do front e, no campo de texto, informe a URL do back (ex.: `https://projeto-ci-cd-back-ul9j.onrender.com/`).
 3. Clique em **Chamar API**.
 
 ## Páginas/arquivos
